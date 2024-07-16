@@ -31,7 +31,7 @@ class DwainsDashboardEditFlow(config_entries.OptionsFlow):
             return self.async_create_entry(title="", data=user_input)
 
         schema = {
-            vol.Optional(SIDEPANEL_TITLE, default=self.config_entry.options.get("sidepanel_title", "Dwains Dashboard")): str,
+            vol.Optional(SIDEPANEL_TITLE, default=self.config_entry.options.get("sidepanel_title", "CUE OFFICE")): str,
             vol.Optional(SIDEPANEL_ICON, default=self.config_entry.options.get("sidepanel_icon", "mdi:alpha-d-box")): str,
         }
 
